@@ -9,7 +9,7 @@ android {
 
     defaultConfig {
         applicationId = "com.example.quiztime"
-        minSdk = 22
+        minSdk = 23
         targetSdk = 34
         versionCode = 1
         versionName = "1.0"
@@ -46,7 +46,12 @@ dependencies {
     implementation(libs.material)
     implementation(libs.androidx.activity)
     implementation(libs.androidx.constraintlayout)
+    implementation("com.github.ismaeldivita:chip-navigation-bar:1.4.0")
+    implementation("com.github.bumptech.glide:glide:4.12.0")
+    implementation("jp.wasabeef:glide-transformations:4.3.0")
+
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
+
 }
