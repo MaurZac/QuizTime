@@ -1,5 +1,6 @@
 package com.example.quiztime.Activity
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.WindowManager
 import androidx.appcompat.app.AppCompatActivity
@@ -25,7 +26,7 @@ class MainActivity : AppCompatActivity() {
             bottomMenu.setItemSelected(R.id.home)
             bottomMenu.setOnItemSelectedListener {
                 if(it == R.id.Board){
-
+                    startActivity((Intent(this@MainActivity,LeaderActivity::class.java)))
                 }
             }
 
